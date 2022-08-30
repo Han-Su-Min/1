@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation-fill-mode 속성</title>
+    <style>
+      /* 애니메이션이 종료된 시점의 상태를 유지 */
+      /* forward: 실행 전 시작지점 스타일 적용 x
+                실행 후: 종료 시점의 스타일 적용 */
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: bgchange;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes bgchange {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: orange;
+        }
+        50% {
+          background-color: yellow;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

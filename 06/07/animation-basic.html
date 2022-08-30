@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키 프레임 정의하기</title>
+    <style>
+      /* @keyframes <키 프레임명>{
+            0%{CSS 코드}
+            n%{CSS 코드}
+            100%{CSS 코드}
+        } */
+      /* animation-name 속성
+        키 프레임명 지정 */
+      div {
+        width: 100px;
+        height: 100px;
+        border-color: red;
+        animation-name: bgchange;
+        animation-duration: 5s;
+      }
+      @keyframes bgchange {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: orange;
+        }
+        50% {
+          background-color: yellow;
+        }
+        100% {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
